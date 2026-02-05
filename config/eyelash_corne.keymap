@@ -139,7 +139,7 @@
             //          Shift Ctrl Space    Bksp MO(2) RAlt
             bindings = <
 &kp GRAVE   &kp Q  &kp W  &kp E      &kp R      &kp T                                  &kp UP                &kp Y     &kp U  &kp I      &kp O    &kp P     &kp BSLH
-&lt 2 TAB   &kp A  &kp S  &kp D      &kp F      &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H     &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&lt 2 TAB   &kp A  &kp S  &kp D      &kp F      &kp G                        &kp LEFT  &kp C_MUTE &kp RIGHT  &kp H     &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &sk LALT    &kp Z  &kp X  &kp C      &kp V      &kp B        &kp SPACE                 &kp DOWN              &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mo 1
                           &kp LSHFT  &kp LCTRL  &kp SPACE                                                    &kp BSPC  &mo 2  &kp RALT
             >;
@@ -170,8 +170,8 @@
             // _ F1 F2 F3 F4 F5  [joy]  F7 F8 F9 F10 F11 F12
             //          _ _ _    _ _ _
             bindings = <
-&trans  &trans  &kp LC(LG(LEFT))       &kp UP    &kp LC(LG(RIGHT))       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &trans
-&trans  &trans  &ht_left HOME LEFT  &kp DOWN  &ht_right END RIGHT  &ht_pgdn END PG_DN             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &ht_left HOME LEFT      &kp DOWN  &ht_right END RIGHT      &trans   &trans
+&trans  &trans  &kp LC(LG(LEFT))       &kp UP    &kp LC(LG(RIGHT))       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &rgb_ug RGB_TOG
+&trans  &trans  &ht_left HOME LEFT  &kp DOWN  &ht_right END RIGHT  &ht_pgdn END PG_DN             &bt BT_PRV      &bt BT_CLR      &bt BT_NXT       &trans  &ht_left HOME LEFT      &kp DOWN  &ht_right END RIGHT      &trans   &trans
 &trans  &kp F1  &kp F2              &kp F3    &kp F4               &kp F5              &trans                     &mmv MOVE_DOWN                   &kp F7  &kp F8                  &kp F9    &kp F10                  &kp F11  &kp F12
                                     &trans    &trans               &trans                                                                          &trans  &trans                  &trans
             >;
@@ -180,12 +180,12 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "EMPTY";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                                  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
