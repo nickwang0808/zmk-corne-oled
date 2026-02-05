@@ -29,23 +29,6 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    // ==================== MACROS ====================
-    macros {
-        // M0: Ctrl+GUI+Left (desktop switch left)
-        desktop_left: desktop_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT))>;
-        };
-
-        // M1: Ctrl+GUI+Right (desktop switch right)
-        desktop_right: desktop_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(RIGHT))>;
-        };
-    };
-
     // ==================== BEHAVIORS ====================
     behaviors {
         // Hold-tap: tap=PgUp, hold=Home
@@ -187,7 +170,7 @@
             // _ F1 F2 F3 F4 F5  [joy]  F7 F8 F9 F10 F11 F12
             //          _ _ _    _ _ _
             bindings = <
-&trans  &trans  &desktop_left       &kp UP    &desktop_right       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &trans
+&trans  &trans  &kp LC(LG(LEFT))       &kp UP    &kp LC(LG(RIGHT))       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &trans
 &trans  &trans  &ht_left HOME LEFT  &kp DOWN  &ht_right END RIGHT  &ht_pgdn END PG_DN             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &ht_left HOME LEFT      &kp DOWN  &ht_right END RIGHT      &trans   &trans
 &trans  &kp F1  &kp F2              &kp F3    &kp F4               &kp F5              &trans                     &mmv MOVE_DOWN                   &kp F7  &kp F8                  &kp F9    &kp F10                  &kp F11  &kp F12
                                     &trans    &trans               &trans                                                                          &trans  &trans                  &trans
