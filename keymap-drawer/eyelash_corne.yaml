@@ -197,13 +197,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [1, 16, 30]
-  k: '&soft_off'
 - p: [23, 24]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [1, 2]
-  k: $$mdi:keyboard-esc$$
 - p: [30, 31]
   k: {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
