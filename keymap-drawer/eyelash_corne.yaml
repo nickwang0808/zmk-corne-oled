@@ -51,7 +51,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:keyboard-esc$$', type: held}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -99,7 +99,7 @@ layers:
   - {t: '0', s: )}
   - KP DOT
   NAV/FN:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Gui+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
