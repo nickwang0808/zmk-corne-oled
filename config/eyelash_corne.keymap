@@ -129,12 +129,12 @@
             // `/L1 Q W E R T  [joy]  Y U I O P \
             // Tab/L2 A S D F G  [joy]  H J K L ; '
             // OSM(Alt) Z X C V B  [Mute]  N M , . / MO(1)
-            //          Shift Space Ctrl    Bksp MO(2) RAlt
+            //          OSM(Shift) Space OSM(Ctrl)    Bksp MO(2) RAlt
             bindings = <
 &lt 1 GRAVE &kp Q  &kp W  &kp E      &kp R      &kp T                                  &kp UP                &kp Y     &kp U  &kp I      &kp O    &kp P     &kp BSLH
 &lt 2 TAB   &kp A  &kp S  &kp D      &kp F      &kp G                        &kp LEFT  &kp C_MUTE &kp RIGHT  &kp H     &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &sk LALT    &kp Z  &kp X  &kp C      &kp V      &kp B        &kp C_MUTE                &kp DOWN              &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mo 1
-                          &kp LSHFT  &kp SPACE  &kp LCTRL                                                    &kp BSPC  &mo 2  &kp RALT
+                          &sk LSHFT  &kp SPACE  &sk LCTRL                                                    &kp BSPC  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
