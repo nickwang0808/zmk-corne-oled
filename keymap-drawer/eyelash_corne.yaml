@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '`', s: '~'}
+  - {t: '`', h: NUMBER, s: '~'}
   - Q
   - W
   - E
@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:keyboard-space$$
+  - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -44,14 +44,14 @@ layers:
   - {t: /, s: '?'}
   - NUMBER
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - NAV/FN
   - $$mdi:apple-keyboard-option$$
   NUMBER:
+  - {t: '$$mdi:keyboard-esc$$', type: held}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -91,7 +91,7 @@ layers:
   - {t: '3', s: '#'}
   - KP DOT
   - KP SLASH
-  - {t: KP ASTERISK, type: held}
+  - {t: KP ASTERISK, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
