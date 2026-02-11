@@ -65,8 +65,8 @@ layers:
   - {t: '=', s: +}
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -205,7 +205,5 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-- p: [15, 16]
-  k: NUMBER
 - p: [30, 31]
   k: {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
