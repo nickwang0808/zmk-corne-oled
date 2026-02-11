@@ -43,9 +43,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - NUMBER
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - NAV/FN
   - $$mdi:apple-keyboard-option$$
