@@ -112,13 +112,6 @@
             bindings = <&kp ESC>;
         };
 
-        // S+D = MO(1) (positions 15+16)
-        combo_sd_layer1 {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&mo 1>;
-        };
-
         // X+C = One-shot GUI (positions 30+31)
         combo_xc_gui {
             timeout-ms = <50>;
