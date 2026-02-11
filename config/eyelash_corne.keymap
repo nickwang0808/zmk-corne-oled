@@ -130,12 +130,12 @@
 
         lower_layer {
             display-name = "NUMBER";
-            // ESC Esc _ _ Bksp Del  [joy]  7 8 9 _ - =
+            // ESC _ _ _ Bksp Del  [joy]  7 8 9 _ - =
             // Caps _ _ _ ( )  [joy]  4 5 6 * KP- KP+
             // _ _ _ _ [ ]  [joy]  1 2 3 KP. KP/ KP*
             //          _ _ _    _ 0 KP.
             bindings = <
-&kp ESC   &kp ESC &trans  &trans  &kp BSPC  &kp DEL                                        &mmv MOVE_UP                     &kp N7  &kp N8  &kp N9      &none            &kp MINUS     &kp EQUAL
+&kp ESC   &trans  &trans  &trans  &kp BSPC  &kp DEL                                        &mmv MOVE_UP                     &kp N7  &kp N8  &kp N9      &none            &kp MINUS     &kp EQUAL
 &kp CAPS  &trans  &trans  &trans  &kp LPAR  &kp RPAR                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp N4  &kp N5  &kp N6      &kp KP_ASTERISK  &kp KP_MINUS  &kp KP_PLUS
 &trans    &trans  &trans  &trans  &kp LBKT  &kp RBKT       &kp C_MUTE                      &mmv MOVE_DOWN                   &kp N1  &kp N2  &kp N3      &kp KP_DOT       &kp KP_SLASH  &kp KP_ASTERISK
                           &trans  &trans    &trans                                                                          &trans  &kp N0  &kp KP_DOT
@@ -146,12 +146,12 @@
 
         raise_layer {
             display-name = "NAV/FN";
-            // _ _ M0 Up M1 PgUp/Hm  [joy]  _ _ Up _ _ _
+            // Esc _ M0 Up M1 PgUp/Hm  [joy]  _ _ Up _ _ _
             // _ _ Left/Hm Down Right/End PgDn/End  [joy]  _ Left/Hm Down Right/End _ _
             // _ F1 F2 F3 F4 F5  [joy]  F7 F8 F9 F10 F11 F12
             //          _ _ _    _ _ _
             bindings = <
-&trans  &trans  &kp LC(LG(LEFT))       &kp UP    &kp LC(LG(RIGHT))       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &rgb_ug RGB_TOG
+&kp ESC  &trans  &kp LC(LG(LEFT))       &kp UP    &kp LC(LG(RIGHT))       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &rgb_ug RGB_TOG
 &trans  &trans  &ht_left HOME LEFT  &kp DOWN  &ht_right END RIGHT  &ht_pgdn END PG_DN             &bt BT_PRV      &bt BT_CLR      &bt BT_NXT       &trans  &ht_left HOME LEFT      &kp DOWN  &ht_right END RIGHT      &trans   &trans
 &trans  &kp F1  &kp F2              &kp F3    &kp F4               &kp F5              &trans                     &mmv MOVE_DOWN                   &kp F7  &kp F8                  &kp F9    &kp F10                  &kp F11  &kp F12
                                     &trans    &trans               &trans                                                                          &trans  &trans                  &trans
