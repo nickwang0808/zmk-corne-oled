@@ -112,11 +112,11 @@
             bindings = <&sk LGUI>;
         };
 
-        // Q+W = Hyper+W for dictation (positions 1+2)
-        combo_qw_hyper_w {
+        // Q+W = Ctrl+Shift+' for dictation (positions 1+2)
+        combo_qw_dictation {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp LS(LC(LA(LG(W))))>;
+            bindings = <&kp LC(LS(SQT))>;
             layers = <0>;
         };
     };
