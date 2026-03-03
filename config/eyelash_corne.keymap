@@ -111,6 +111,14 @@
             key-positions = <30 31>;
             bindings = <&sk LGUI>;
         };
+
+        // Q+W = Hyper+W for dictation (positions 1+2)
+        combo_qw_hyper_w {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp LS(LC(LA(LG(W))))>;
+            layers = <0>;
+        };
     };
 
     // ==================== KEYMAP ====================
@@ -137,12 +145,12 @@
             display-name = "NUMBER";
             // ESC _ _ _ Bksp Del  [joy]  7 8 9 _ - =
             // Caps _ _ _ ( )  [joy]  4 5 6 * KP- KP+
-            // _ _ _ _ [ ]  [joy]  1 2 3 KP. KP/ KP*
+            // _ _ _ _ [ ]  [joy]  1 2 3 . KP/ KP*
             //          _ _ _    _ 0 KP.
             bindings = <
 &kp ESC   &trans  &trans  &trans  &kp BSPC  &kp DEL                                        &mmv MOVE_UP                     &kp N7  &kp N8  &kp N9      &none            &kp MINUS     &kp EQUAL
 &kp CAPS  &trans  &trans  &trans  &kp LPAR  &kp RPAR                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp N4  &kp N5  &kp N6      &kp KP_ASTERISK  &kp KP_MINUS  &kp KP_PLUS
-&trans    &trans  &trans  &trans  &kp LBKT  &kp RBKT       &kp C_MUTE                      &mmv MOVE_DOWN                   &kp N1  &kp N2  &kp N3      &kp KP_DOT       &kp KP_SLASH  &kp KP_ASTERISK
+&trans    &trans  &trans  &trans  &kp LBKT  &kp RBKT       &kp C_MUTE                      &mmv MOVE_DOWN                   &kp N1  &kp N2  &kp N3      &kp DOT          &kp KP_SLASH  &kp KP_ASTERISK
                           &trans  &trans    &trans                                                                          &trans  &kp N0  &kp KP_DOT
             >;
 
