@@ -204,5 +204,5 @@ combos:
 - p: [30, 31]
   k: {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
 - p: [1, 2]
-  k: Hyper+W
+  k: Ctl+Sft+'
   l: [QWERTY]
