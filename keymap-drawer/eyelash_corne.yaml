@@ -89,7 +89,7 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - KP DOT
+  - {t: ., s: '>'}
   - KP SLASH
   - {t: KP ASTERISK, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -203,3 +203,6 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [30, 31]
   k: {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
+- p: [1, 2]
+  k: Hyper+W
+  l: [QWERTY]
