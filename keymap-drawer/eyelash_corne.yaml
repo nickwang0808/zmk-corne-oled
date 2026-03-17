@@ -126,7 +126,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:arrow-right-bold$$', h: END}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -203,6 +203,3 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [30, 31]
   k: {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
-- p: [1, 2]
-  k: Ctl+Sft+'
-  l: [QWERTY]
