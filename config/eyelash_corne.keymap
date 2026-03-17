@@ -112,13 +112,6 @@
             bindings = <&sk LGUI>;
         };
 
-        // Q+W = Ctrl+Shift+' for dictation (positions 1+2)
-        combo_qw_dictation {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp LC(LS(SQT))>;
-            layers = <0>;
-        };
     };
 
     // ==================== KEYMAP ====================
@@ -165,7 +158,7 @@
             //          _ _ _    _ _ _
             bindings = <
 &kp ESC  &trans  &kp LC(LG(LEFT))       &kp UP    &kp LC(LG(RIGHT))       &ht_pgup HOME PG_UP                            &mmv MOVE_UP                     &trans  &trans                  &kp UP    &trans                   &trans   &rgb_ug RGB_TOG
-&trans  &trans  &ht_left HOME LEFT  &kp DOWN  &ht_right END RIGHT  &ht_pgdn END PG_DN             &bt BT_PRV      &bt BT_CLR      &bt BT_NXT       &trans  &ht_left HOME LEFT      &kp DOWN  &ht_right END RIGHT      &trans   &trans
+&trans  &trans  &ht_left HOME LEFT  &kp DOWN  &ht_right END RIGHT  &ht_pgdn END PG_DN             &bt BT_PRV      &bt BT_CLR      &bt BT_NXT       &trans  &ht_left HOME LEFT      &kp DOWN  &ht_right END RIGHT      &trans   &studio_unlock
 &trans  &kp F1  &kp F2              &kp F3    &kp F4               &kp F5              &trans                     &mmv MOVE_DOWN                   &kp F7  &kp F8                  &kp F9    &kp F10                  &kp F11  &kp F12
                                     &trans    &trans               &trans                                                                          &trans  &trans                  &trans
             >;
