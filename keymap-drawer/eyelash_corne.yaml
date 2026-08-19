@@ -47,7 +47,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: 'Ctl+ $$mdi:backspace$$', type: backspace}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV/FN}
   NUMBER:
   - {t: '`', s: '~', type: held}
@@ -101,9 +101,9 @@ layers:
   NAV/FN:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Gui+ $$mdi:arrow-left-bold$$
+  - Ctl+Gui+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
-  - Ctl+Gui+ $$mdi:arrow-right-bold$$
+  - Ctl+Gui+$$mdi:arrow-right-bold$$
   - {t: PG UP, h: HOME}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
