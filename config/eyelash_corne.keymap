@@ -129,6 +129,14 @@
             bindings = <&sk LGUI>;
         };
 
+        // Left Control+Shift = Inventory while held on GAME.
+        combo_game_inventory {
+            timeout-ms = <50>;
+            key-positions = <42 43>;
+            layers = <4>;
+            bindings = <&mo 5>;
+        };
+
     };
 
     // ==================== KEYMAP ====================
@@ -199,12 +207,12 @@
             display-name = "GAME";
             // Plain modifiers/layer keys avoid hold-tap and one-shot behavior in games.
             // Rotate the left alpha columns right: TGB | QAZ | WSX | EDC | RFV.
-            // Hold the left Control thumb key for the inventory number layer.
+            // Hold left Control+Shift together for the inventory number layer.
             bindings = <
 &kp ESC    &kp T  &kp Q  &kp W  &kp E  &kp R                          &tog 4                  &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp G  &kp A  &kp S  &kp D  &kp F          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LALT   &kp B  &kp Z  &kp X  &kp C  &kp V  &trans          &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-                         &mo 5   &trans  &trans                                                  &trans  &trans  &trans
+                         &kp LCTRL  &kp LSHFT  &trans                                            &trans  &trans  &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -212,11 +220,11 @@
 
         inventory_layer {
             display-name = "INVENTORY";
-            // QWERT = 12345, ASDFG = 67890; other keys fall through to GAME.
+            // Physical ZXCVB = 12345, NM,./ = 67890; movement falls through to GAME.
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                          &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans          &trans                          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
                        &trans  &trans  &trans                                                  &trans  &trans  &trans
             >;
 
